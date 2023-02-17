@@ -158,14 +158,12 @@ header .navbar {
 .home {
     position: relative;
     padding: 0;
-
     height: calc(100vh - 40px);
 }
 .media-icons {
     padding-left: 15%;
     z-index: 999;
     position: absolute;
-
     height: calc(100vh - 40px);
     display: flex;
     flex-direction: column;
@@ -186,20 +184,17 @@ header .navbar {
     z-index: 777;
     position: relative;
     width: 100%;
-
     height: calc(100vh - 40px);
 }
 
 .bg-slider .swiper-slide {
     position: relative;
     width: 100%;
-
     height: calc(100vh - 40px);
 }
 .bg-slider .swiper-slide img {
     position: relative;
     width: 100%;
-
     height: calc(100vh - 40px);
     object-fit: cover;
     object-position: center;
