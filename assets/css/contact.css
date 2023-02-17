@@ -1,0 +1,12 @@
+:root {
+    --h1-font: 4rem;
+    --h2-font: 3rem;
+    --p-font: 1.6rem;
+}
+
+
+/* common */
+
+.location iframe {
+    width: 100%;
+}

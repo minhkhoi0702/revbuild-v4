@@ -1,0 +1,27 @@
+/* Daniel */
+@font-face {
+    font-family: "Daniel";
+    src: url("Daniel/Daniel.woff2") format("woff2"),
+        url("Daniel/Daniel.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Daniel";
+    src: url("Daniel/DanielBlack.woff2") format("woff2"),
+        url("Daniel/DanielBlack.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Daniel";
+    src: url("Daniel/DanielBold.woff2") format("woff2"),
+        url("Daniel/DanielBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

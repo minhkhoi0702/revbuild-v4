@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <!-- folder css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+    <!-- navbar design -->
+    <nav class="navbar">
+        <!-- Logo -->
+        <a href="index.html"><img src="./assets/img/Revbuild 4.svg" alt="Revbuild" class="logo" /></a>
+        <!-- Menu -->
+        <ul class="navlist">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </nav>
+
+    <!-- Project -->
+
+
+    <!-- Contact Us -->
+    <section class="contact" id="contact-us">
+        <div class="contact-left">
+            <h2 class="sub-title">Contact <span>Us</span></h2>
+            <p class="desc">
+                For more information on any our design or services, or if you wish to request a brochure please contact us using the form below.
+            </p>
+            <div class="list">
+                <li><a href="tel:+842866862324" class="contact-info"><span><i class="bx bx-phone"></i></span> Phone: (+84)28 6686 2324</a></li>
+                <li><a href="mailto:rvbd@revbuild.com.au" class="contact-info"><span><i class="bx bx-envelope"></i></span> Email: rvbd@revbuild.com.au</a></li>
+                <li>
+                    <a href="https://www.google.com/maps/place/C%C3%B4ng+ty+c%C4%83n+h%E1%BB%99+Tresor/@10.7667039,106.7009802,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f205ac9b6d5:0x2d6300e145f1a39b!8m2!3d10.7666892!4d106.7031828" class="contact-info"><span><i class="bx bx-home-alt"></i></span> Address: Distric 1, Ho Chi Minh</a>
+                </li>
+                <li><a href="#" class="contact-info"><span><i class="bx bx-link"></i></span> Website: www.revbuild.com.au</p></a></li>
+            </div>
+            <h3 class="fl">Follow Us</h3>
+            <div class="contact-icons">
+                <a href="https://www.facebook.com/revbuild"><i class='bx bxl-facebook' ></i></a>
+                <!-- <a href="#"><i class='bx bxl-twitter' ></i></a> -->
+                <a href="https://www.instagram.com/revbuild.vietnam/"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+        <div class="contact-right">
+            <form onsubmit="sendEmail(); reset(); return false; ">
+                <input type="name" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <input type="" placeholder="Your Mobile Number" required>
+                <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+                <input type="submit" value="Send Message" class="submit" required>
+            </form>
+        </div>
+    </section>
+
+    <!----end section design--->
+    <section class="end">
+        <div class="last-text">
+            <p>Copyright © 2022 by Revbuild All Rights Reserved.</p>
+        </div>
+
+        <div class="top">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+    </section>
+
+    <!-- this is script -->
+    <!-- Navbar -->
+    <script type="text/javascript" src="./js/script.js"></script>
+    <!-- <script type="text/javascript">
+            // js for navigation bar effect on scroll
+            
+
+            var menu = document.querySelector(".menu")
+            var menuBtn = document.querySelector(".menu-btn")
+            var closeBtn = document.querySelector(".close-btn")
+
+            menuBtn.addEventListener("click",  () => {
+                menu.classList.add("active");
+            })
+
+            closeBtn.addEventListener("click",  () => {
+                menu.classList.remove("active");
+            })
+
+        </script> -->
+    <!-- FAQ -->
+    <script>
+        const accordion = document.getElementsByClassName("contentBx");
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+            });
+        }
+    </script>
+    <!-- Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- stmp send email -->
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            let email = document.getElementById("email").value;
+            let body = "Email: " + email + "hello world";
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "minhkhoi0702@gmail.com",
+                Password: "53D932151495410473F37000829F0514F538",
+                To: "Johnny@revbuild.com.au",
+                From: "minhkhoi0702@gmail.com",
+                // From: document.getElementById("email").value,
+                Subject: "This is the subject",
+                Body: body,
+            }).then((message) => alert(message));
+        }
+    </script>
+</body>
+
+</html>
