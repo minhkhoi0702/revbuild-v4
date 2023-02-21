@@ -670,7 +670,7 @@ form textarea {
     }
 
     .services .container {
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .services .item:nth-child(4),
     .services .item:last-child {
