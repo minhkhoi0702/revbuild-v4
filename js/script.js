@@ -2,16 +2,18 @@ const header = document.querySelector(".navbar");
 window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 150);
 });
+//Responsive navigation menu toggle
+const menuBtn = document.querySelector(".nav-menu-btn");
+const closeBtn = document.querySelector(".nav-close-btn");
 
-let menu = document.querySelector("#menu-icon");
-let navlist = document.querySelector(".navlist");
+const navigation = document.querySelector(".navigation");
 
-menu.onclick = () => {
-    menu.classList.toggle("bx-x");
-    navlist.classList.toggle("open");
-};
-
+menuBtn.addEventListener("click", () => {
+    navigation.classList.add("active");
+});
+closeBtn.addEventListener("click", () => {
+    navigation.classList.remove("active");
+});
 window.onscroll = () => {
-    menu.classList.remove("bx-x");
-    navlist.classList.remove("open");
+    navigation.classList.remove("active");
 };
