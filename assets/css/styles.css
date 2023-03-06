@@ -260,7 +260,7 @@ header .navbar {
 
 /*Our Services*/
 .services {
-    padding-top: 0px;
+    padding: 0px 15%;
     position: relative;
 }
 .services .info {
@@ -286,11 +286,15 @@ header .navbar {
     text-align: center;
 }
 
-.services .container {
+.services .row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 600px 600px 600px 600px;
+    grid-template-rows: 600px 600px;
     gap: 2rem;
+    margin-bottom: 4rem;
+}
+.services .row:last-child {
+    margin-bottom: 0;
 }
 
 .services .item {
@@ -495,7 +499,7 @@ header .navbar {
 .contact-icons i {
     height: 40px;
     width: 40px;
-    color: var(--text-color);
+    color: var(--main-color);
     font-size: 25px;
     display: inline-flex;
     align-items: center;
@@ -507,7 +511,6 @@ header .navbar {
 
 .contact-icons i:hover {
     background: var(--text-color);
-    color: var(--main-color);
 }
 
 .contact-right form {
@@ -681,10 +684,10 @@ form textarea {
         height: 30px;
     }
 
-    .services .container {
+    .services .row {
         grid-template-columns: 1fr 1fr;
     }
-    .services .item:nth-child(4),
+
     .services .item:last-child {
         grid-column: 2/3;
     }
@@ -803,11 +806,12 @@ form textarea {
         border-bottom: solid 2px var(--text-color);
     }
 
-    .services .container {
+    .services .row {
         grid-template-columns: 1fr;
-        grid-template-rows: 600px 600px 600px 600px 600px 600px 600px 600px;
+        grid-template-rows: 600px 600px 600px 600px;
+        margin-bottom: 2rem;
     }
-    .services .item:nth-child(4),
+
     .services .item:last-child {
         grid-column: 1/2;
     }
