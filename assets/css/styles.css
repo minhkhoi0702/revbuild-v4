@@ -629,7 +629,9 @@ form textarea {
     .side-nav {
         width: 8%;
     }
-
+    .services {
+        padding: 0px 12%;
+    }
     .services .info {
         padding-top: 40px;
     }
@@ -655,7 +657,9 @@ form textarea {
     section {
         padding: 100px 3%;
     }
-
+    .services {
+        padding: 0px 3%;
+    }
     .side-nav {
         display: none;
     }
