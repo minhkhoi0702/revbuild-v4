@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <!-- CSS Slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Sub-Menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" charset="UTF-8" ></script>
 
     <!-- folder css -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -42,7 +45,7 @@
                 <div class="nav-items">
                     <i class='bx bx-x nav-close-btn'></i>
                     <a href="about.html">About Us</a>
-                    <a href="services.html">Services</a>
+                    <a href="services.html" class="sub-btn">Services<i class="fas fa-angle-right dropdown"></i></a>
                     <a href="project.html">Project</a>
                     <a href="contact.html">Contact Us</a>
                 </div>
@@ -141,88 +144,92 @@
             </p>
         </div>
         <div class="container">
-            <div class="item">
-                <a href=""><img src="./assets/img/home/LAND SURVEY.jpg" alt="" class="service-image"></a>
-                <div class="details">
-                    <h3>LAND SURVEY</h3>
-                    <P>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
-                        commodi cum molestiae tenetur enim iusto!
-                    </P>
+            <div class="row">
+                <div class="item">
+                    <a href=""><img src="./assets/img/home/LAND SURVEY.jpg" alt="" class="service-image"></a>
+                    <div class="details">
+                        <h3>LAND SURVEY</h3>
+                        <P>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
+                            commodi cum molestiae tenetur enim iusto!
+                        </P>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./assets/img/home/ESTIMA.jpg" alt="" class="service-image"></a>
+                    <div class="details">
+                        <h3>ESTIMATING</h3>
+                        <P>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
+                            commodi cum molestiae tenetur enim iusto!
+                        </P>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./assets/img/home/CABINET.jpg" alt="" class="service-image"></a>
+                    <div class="details">
+                        <h3>CABINETRY</h3>
+                        <P>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
+                            commodi cum molestiae tenetur enim iusto!
+                        </P>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./assets/img/home/DRAFTING.jpg" alt="" class="service-image"></a>
+                    <div class="details">
+                        <h3>DRAFTING</h3>
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas veritatis
+                            explicabo rem totam porro pariatur nihil accusantium omnis eius, ex obcaecati magni facilis
+                            fugiat unde atque beatae libero quia cumque animi necessitatibus nobis deserunt quaerat
+                            voluptate! Unde accusamus dolore a error consequuntur adipisci cum nesciunt nemo!
+                        </P>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <a href=""><img src="./assets/img/home/ESTIMA.jpg" alt="" class="service-image"></a>
-                <div class="details">
-                    <h3>ESTIMATING</h3>
-                    <P>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
-                        commodi cum molestiae tenetur enim iusto!
-                    </P>
+            <div class="row">
+                <div class="item">
+                    <a href=""><img src="./assets/img/home/HEAT COOL.jpg" alt="" class="service-image"></a>
+                    <div class="details">
+                        <h3>HEATING & COOLING</h3>
+                        <P>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
+                            commodi cum molestiae tenetur enim iusto!
+                        </P>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <a href=""><img src="./assets/img/home/CABINET.jpg" alt="" class="service-image"></a>
-                <div class="details">
-                    <h3>CABINETRY</h3>
-                    <P>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
-                        commodi cum molestiae tenetur enim iusto!
-                    </P>
+                <div class="item">
+                    <a href=""><img src="./assets/img/home/ADMIN.jpg" alt="" class="service-image"></a>
+                    <div class="details">
+                        <h3>ADMIN</h3>
+                        <P>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
+                            commodi cum molestiae tenetur enim iusto!
+                        </P>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <a href=""><img src="./assets/img/home/DRAFTING.jpg" alt="" class="service-image"></a>
-                <div class="details">
-                    <h3>DRAFTING</h3>
-                    <P>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas veritatis
-                        explicabo rem totam porro pariatur nihil accusantium omnis eius, ex obcaecati magni facilis
-                        fugiat unde atque beatae libero quia cumque animi necessitatibus nobis deserunt quaerat
-                        voluptate! Unde accusamus dolore a error consequuntur adipisci cum nesciunt nemo!
-                    </P>
+                <div class="item">
+                    <a href=""><img src="./assets/img/home/GRAPHIC.png" alt="" class="service-image"></a>
+                    <div class="details">
+                        <h3>GRAPHIC DESIGN</h3>
+                        <P>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
+                            commodi cum molestiae tenetur enim iusto!
+                        </P>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <a href=""><img src="./assets/img/home/HEAT COOL.jpg" alt="" class="service-image"></a>
-                <div class="details">
-                    <h3>HEATING & COOLING</h3>
-                    <P>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
-                        commodi cum molestiae tenetur enim iusto!
-                    </P>
-                </div>
-            </div>
-            <div class="item">
-                <a href=""><img src="./assets/img/home/ADMIN.jpg" alt="" class="service-image"></a>
-                <div class="details">
-                    <h3>ADMIN</h3>
-                    <P>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
-                        commodi cum molestiae tenetur enim iusto!
-                    </P>
-                </div>
-            </div>
-            <div class="item">
-                <a href=""><img src="./assets/img/home/GRAPHIC.png" alt="" class="service-image"></a>
-                <div class="details">
-                    <h3>GRAPHIC DESIGN</h3>
-                    <P>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eligendi nostrum ea in, quo
-                        commodi cum molestiae tenetur enim iusto!
-                    </P>
-                </div>
-            </div>
-            <div class="item">
-                <a href="./render.html"><img src="./assets/img/home/RENDER3D.jpg" alt="" class="service-image"></a>
-                <div class="details">
-                    <h3>3D RENDER</h3>
-                    <P>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis quae porro id consectetur!
-                        Architecto totam nihil veniam quam quidem modi neque qui eveniet rerum aperiam sit, et vel ut.
-                        Animi recusandae asperiores maxime, laudantium optio excepturi delectus repudiandae qui et
-                        beatae impedit fuga quidem voluptatum, ipsam itaque a quae.
-                    </P>
+                <div class="item">
+                    <a href="./render.html"><img src="./assets/img/home/RENDER3D.jpg" alt="" class="service-image"></a>
+                    <div class="details">
+                        <h3>3D RENDER</h3>
+                        <P>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis quae porro id consectetur!
+                            Architecto totam nihil veniam quam quidem modi neque qui eveniet rerum aperiam sit, et vel ut.
+                            Animi recusandae asperiores maxime, laudantium optio excepturi delectus repudiandae qui et
+                            beatae impedit fuga quidem voluptatum, ipsam itaque a quae.
+                        </P>
+                    </div>
                 </div>
             </div>
         </div>
