@@ -73,7 +73,7 @@ span {
     position: absolute;
     left: 0;
     top: 0;
-    width: 12%;
+    width: 10%;
     height: 100%;
 }
 
@@ -296,7 +296,6 @@ header .navbar {
 .services .item {
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .services .item:nth-child(4),
@@ -559,8 +558,7 @@ form textarea {
     align-items: center;
     justify-content: space-between;
 }
-.footer-top .container {
-}
+
 .footer-top-left .logo-footer {
     height: 35px;
     margin-bottom: 5px;
@@ -626,7 +624,7 @@ form textarea {
         padding: 100px 12%;
     }
     .side-nav {
-        width: 10%;
+        width: 8%;
     }
 
     .services .info {
