@@ -266,7 +266,7 @@ header .navbar {
     max-height: 200px;
     object-fit: cover;
     object-position: center;
-    opacity: 0.4;
+    opacity: 0.3;
 }
 .contact .content {
     position: absolute;
