@@ -17,3 +17,9 @@ closeBtn.addEventListener("click", () => {
 window.onscroll = () => {
     navigation.classList.remove("active");
 };
+// jquery for toggle dropdown menu
+$(document).ready(function () {
+    $(".sub-btn").click(function (){
+        $(this).next(".sub-menu").slideToggle();
+    })
+})
