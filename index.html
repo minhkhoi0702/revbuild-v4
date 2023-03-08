@@ -42,14 +42,30 @@
             <a href="index.html"><img src="./assets/img/white-logo.svg " alt="Revbuild" class="logo" /></a>
             <!-- Menu -->
             <div class="navigation">
-                <div class="nav-items">
+                <ul class="menu">
                     <i class='bx bx-x nav-close-btn'></i>
-                    <a href="about.html">About Us</a>
-                    <a href="#!" class="sub-btn">Services</a>
-
-                    <a href="project.html">Project</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
+                    <li class="menu-item">
+                        <a href="#!">About Us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#!" class="sub-btn">Services <i class="fas fa-angle-down"></i></a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="#!">Land Survey</a></li>
+                            <li class="sub-item"><a href="#!">Estimating</a></li>
+                            <li class="sub-item"><a href="#!">Cabinetry</a></li>
+                            <li class="sub-item"><a href="#!">Drafting</a></li>
+                            <li class="sub-item"><a href="#!">Heating & Cooling</a></li>
+                            <li class="sub-item"><a href="#!">Admin</a></li>
+                            <li class="sub-item"><a href="#!">Graphic Design</a></li>
+                            <li class="sub-item"><a href="#!">3D Render</a></li>
+                          
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#!">Project</a></li>
+                    <li class="menu-item"><a href="#!">Contact Us</a>
+                    </li>
+                </ul>
             </div>
             <i class='bx bx-menu nav-menu-btn'></i>
         </div>
@@ -319,12 +335,12 @@
             </div>
         </div>
         <div class="contact-right">
-            <form onsubmit="sendEmail(); reset(); return false; ">
+            <form onsubmit="sebdEmail(event)">
                 <input type="name" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email Address" required>
-                <input type="" placeholder="Your Mobile Number" required>
-                <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
-                <input type="submit" value="Send Message" class="submit" required>
+                <input type="email" placeholder="Your Email Address" required id="exampleInputEmail1">
+                <input type="text" placeholder="Your Mobile Number" required id="exampleFormControlSubject">
+                <textarea name="" cols="35" rows="10" placeholder="How can I Help You" required id="exampleFormControlTextarea1"></textarea>
+                <button type="submit" value="Send Message" class="submit" required>Send Message</button>
             </form>
         </div>
         <!-- <div class="side-nav">
@@ -338,8 +354,8 @@
     <section class="end">
         <div class="footer-top">
                 <div class="footer-top-left">
-                    <img src="./assets/img/white-logo.svg " alt="Revbuild" class="logo-footer" />
-                    <p class="slogan">FOR THE REAL WORLD </p>
+                    <img src="./assets/img/logo-footer.svg" alt="Revbuild" class="logo-footer" />
+                    
                 </div>
                 <div class="footer-top-mid">
                     <a href="#!" ><i class='bx bx-location-plus'></i>Representative office in Viet Nam 
@@ -396,22 +412,26 @@
     </script>
 
     <!-- stmp send email -->
-    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-        function sendEmail() {
-            let email = document.getElementById("email").value;
-            let body = "Email: " + email + "hello world";
+        function sebdEmail(e) {
+            e.preventDefault();
+
             Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "minhkhoi0702@gmail.com",
-                Password: "53D932151495410473F37000829F0514F538",
-                To: "Johnny@revbuild.com.au",
-                From: "minhkhoi0702@gmail.com",
-                // From: document.getElementById("email").value,
-                Subject: "This is the subject",
-                Body: body,
-            }).then((message) => alert(message));
+                Host : "smtp.elasticemail.com",
+                Username : "anhtuan.truong3011@gmail.com",
+                Password : "C2078C0DBF339037994FB27C95231F300C27",
+                To : 'minhkhoi0702@gmail.com',
+                From : "anhtuan.truong3011@gmail.com",
+                Subject : document.getElementById('exampleFormControlSubject').value,
+                Body : document.getElementById('exampleFormControlTextarea1').value
+            }).then(
+              message => alert(message)
+            );
+
+            return true;
         }
+
     </script>
 </body>
 

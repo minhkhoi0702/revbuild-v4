@@ -120,8 +120,7 @@ header .navbar {
     align-items: center;
     justify-content: space-between;
     background: var(--nav-color);
-    /* background: transparent; */
-    padding: 15px 15%;
+    padding: 0px 15%;
     transition: all 0.45s ease;
 }
 .navbar.sticky {
@@ -139,21 +138,79 @@ header .navbar {
 .nav-menu-btn {
     display: none;
 }
+.navigation{
+    position: relative;
+    line-height: 70px;
+}
+.navigation .menu{
+    position: relative;
+    display:flex; 
+    justify-content: center;  
+    list-style: none;
+    user-select: none;
+}
+.menu-item{
+    position: relative;
+}
 
-.navigation .nav-items a {
+.menu-item > a {
     font-weight: 500;
     font-size: var(--p-font);
-    padding: 10px 0;
+    padding: 27px 0;
+    margin: 0 22.5px;
 }
 
-.navigation .nav-items a:hover {
-    border-bottom: solid 2px var(--text-color);
+.menu-item > a:hover { 
+    text-shadow: 1px 0 0 currentColor;  
+    /* opacity: 0.9; */
+    transition: 0.1s;
 }
 
-.navigation .nav-items a:not(:last-child) {
-    margin-right: 45px;
+.menu-item:last-child > a {
+    margin-right: 0;
 }
 
+.menu-item .sub-menu{
+    position: absolute;
+    background: var(--nav-color);
+    line-height: 40px;
+    top: 70px;  
+    pointer-events: none;
+    transform: translateY(0px);
+    opacity: 0;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+.menu-item:hover .sub-menu{
+    pointer-events: all;
+    transform: translateY(0px);
+    opacity: 1;
+    
+}
+.sub-menu .sub-item{
+    position: relative;
+    width: 175px; 
+    cursor: pointer;  
+    
+}
+.sub-menu .sub-item:hover{
+    background: var(--text-color)
+}
+
+
+.sub-menu .sub-item a{ 
+    font-weight: 400;
+    font-size: var(--p-font); 
+    display: block;
+    padding: 0px 22.5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.sub-menu .sub-item:last-child a {
+    border-bottom: none;
+}
+.sub-menu .sub-item:hover a{
+    color: var(--main-color);
+}
 /* hero */
 .home {
     position: relative;
@@ -380,11 +437,11 @@ header .navbar {
 
 .accordion h3 {
     font-weight: 500;
-    font-size: var(--h3-font);
+    font-size: var(--p-font);
     line-height: 1.5;
     position: relative;
     padding: 15px 0px;
-    border-bottom: solid 1px var(--text-color);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
     color: var(--text-color);
     cursor: pointer;
 }
@@ -518,14 +575,15 @@ header .navbar {
 }
 
 .contact-right form input,
-form textarea {
+form textarea,form button {
+    font-family: "Poppins", sans-serif;
     width: 100%;
     padding: 17px;
     background: var(--text-color);
-    color: var(--text-color);
+    color: black;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: var(--p-font);
     border-radius: 12px;
     margin-bottom: 17px;
 }
@@ -563,8 +621,8 @@ form textarea {
 }
 
 .footer-top-left .logo-footer {
-    height: 35px;
-    margin-bottom: 5px;
+    height: 50px;
+    
 }
 .footer-top-left p {
     font-size: calc(var(--p-font) / 2);
@@ -618,7 +676,7 @@ form textarea {
         padding: 0 12%;
     }
     header .navbar {
-        padding: 15px 12%;
+        padding: 0px 12%;
     }
     .home .media-icons {
         padding-left: 12%;
@@ -649,7 +707,7 @@ form textarea {
     }
 
     header .navbar {
-        padding: 15px 3%;
+        padding: 0px 3%;
     }
     .home .media-icons {
         padding-left: 3%;
@@ -682,12 +740,20 @@ form textarea {
         transition: 0.1s;
     }
     header .navbar {
-        padding: 10px 3%;
+        padding: 0px 3%;
     }
     .navbar .logo {
         height: 30px;
     }
-
+    .navigation {
+        line-height: 50px;
+    }
+    .menu-item > a {
+        padding: 18px 0px;
+    }
+    .menu-item .sub-menu{
+        top:50px
+    }
     .services .row {
         grid-template-columns: 1fr 1fr;
     }
@@ -702,7 +768,7 @@ form textarea {
         margin-right: 25px;
     }
     .footer-top-left .logo-footer {
-        height: 25px;
+        height: 40px;
     }
     .last-text p {
         font-size: var(--p-font);
@@ -752,6 +818,9 @@ form textarea {
         gap: 5px;
     }
     /* navigation menu */
+    header .navbar {
+        padding: 10px 3%;
+    }
     .nav-menu-btn {
         display: block;
         font-size: calc(var(--p-font) * 2);
@@ -787,7 +856,7 @@ form textarea {
         opacity: 1;
     }
 
-    .navigation .nav-items {
+    .navigation .menu {
         position: relative;
         background-color: var(--nav-color);
         width: 300px;
@@ -797,17 +866,35 @@ form textarea {
         margin: 20px;
         padding: 40px;
         border-radius: 20px;
-        /* transform: translateY(-200px); */
-        transition: 0.3s ease;
+        transition: 0.3s ease;       
     }
-    .navigation .nav-items a {
+    .navigation .menu-item{
+        line-height: 30px;
+    }
+    .navigation .menu-item > a {
+        display:block;
         text-align: center;
-        margin: 15px 50px;
+        margin: 5px 50px;
         transition: 0.3s ease;
+        padding: 10px 0;
     }
 
-    .navigation .nav-items a:hover {
-        border-bottom: solid 2px var(--text-color);
+    
+    .menu-item .sub-menu{
+        opacity: 1;
+        position: relative;
+        top: 0;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        display: none;
+    }
+    .sub-menu .sub-item{
+        text-align: center;
+        
+    }
+    .sub-menu .sub-item a{
+        border-bottom: none;
     }
 
     .services .row {
