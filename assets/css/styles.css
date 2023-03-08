@@ -61,7 +61,7 @@ a {
 }
 
 section {
-    padding: 100px 15%;
+    padding: 100px 18%;
 }
 
 span {
@@ -76,11 +76,21 @@ span {
     width: 10%;
     height: 100%;
 }
-
+.dropdown {
+    margin-left: 7px;
+}
 .sub-title {
     font-family: var(--font-daniel);
     font-weight: bold;
     color: var(--main-color);
+}
+.contact-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--text-color);
 }
 /* Header */
 header {
@@ -98,7 +108,7 @@ header {
 }
 
 .header-top-left a {
-    padding: 12px 10px;
+    padding: 12px 0px ;
 }
 
 .header-top .contact-info:hover {
@@ -319,6 +329,7 @@ header .navbar {
 .services {
     padding: 0px 15%;
     position: relative;
+    margin-bottom: 100px;
 }
 .services .info {
     padding-top: 50px;
@@ -682,7 +693,7 @@ form textarea,form button {
         padding-left: 12%;
     }
     section {
-        padding: 100px 12%;
+        padding: 100px 15%;
     }
     .side-nav {
         width: 8%;
