@@ -1,12 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
-    --h1-font: 4rem;
-    --h2-font: 3rem;
+    --top-nav-color: #2d0000;
+    --nav-color: #750005;
+    --bg-color: linear-gradient(to bottom, #640004, #2d0000);
+    --sd-color: linear-gradient(to bottom, #270000, #430001);
+    --font-daniel: "Daniel";
+    --text-color: white;
+    --main-color: #af0101;
+    --big-font: 4.5rem;
+    --h2-font: 4rem;
+    --h3-font: 2rem;
+    --hl-p-font: 2rem;
     --p-font: 1.6rem;
 }
 
+html {
+    font-size: 62.5%;
+}
 
-/* common */
+body {
+    background-image: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* Common */
+
+.btn {
+    display: inline-block;
+    min-width: 100px;
+    padding: 15px 20px;
+    background: #c40000;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: var(--p-font);
+    text-align: center;
+    color: var(--text-color);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+section {
+    padding: 100px 15%;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.side-nav {
+    background: var(--sd-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+}
+.dropdown {
+    margin-left: 7px;
+}
+.sub-title {
+    font-family: var(--font-daniel);
+    font-weight: bold;
+    color: var(--main-color);
+}
+.contact-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+
+/* location */
+.location{
+    margin-top: 70px;
+}
 .location iframe {
     width: 100%;
 }
+
+/* Contact Us */
+
+.contact {
+    position: relative;
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5rem;
+}
+
+.contact .sub-title {
+    font-size: var(--h2-font);
+    font-family: "Daniel";
+}
+
+.contact .contact-left .desc {
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: var(--p-font-p-font);
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.contact-left .box .info {
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: var(--p-font);
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.contact .contact-left h3 {
+    font-weight: 500;
+    font-size: var(--h3-font);
+    color: var(--text-color);
+    margin: 20px 0px;
+}
+
+.contact-left .list li {
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.contact .contact-info:hover {
+    color: var(--text-color);
+    transform: translateX(10px);
+}
+
+.contact-info i {
+    font-size: calc(var(--p-font));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.contact-icons i {
+    height: 40px;
+    width: 40px;
+    color: var(--main-color);
+    font-size: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all 0.45s ease;
+}
+
+.contact-icons i:hover {
+    background: var(--text-color);
+}
+
+.contact-right form {
+    position: relative;
+}
+
+.contact-right form input,
+form textarea,form button {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 17px;
+    background: var(--text-color);
+    color: black;
+    border: none;
+    outline: none;
+    font-size: var(--p-font);
+    border-radius: 12px;
+    margin-bottom: 17px;
+}
+
+.contact-right textarea {
+    resize: none;
+    height: 240px;
+}
+
+.contact-right .submit {
+    display: inline-block;
+    font-size: var(--p-font);
+    background: var(--main-color);
+    color: var(--text-color);
+    width: 160px;
+    transition: all 0.45s ease;
+    margin-bottom: 0px;
+}
+
+.contact-right .submit:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+
+/* Respossive */
+
+@media (max-width: 1700px) {
+    section {
+        padding: 100px 12%;
+    }
+}
+
+@media (max-width: 1400px) {
+    
+    section {
+        padding: 75px 3% ;
+    }
+   
+}
+
+@media (max-width: 1100px) {
+    :root {
+        --big-font: 3.8rem;
+        --h2-font: 2.6rem;
+        --h3-font: 1.8rem;
+        --hl-p-font: 1.6rem;
+        --p-font: 1.3rem;
+        transition: 0.1s;
+    }
+}
+
+@media (max-width: 920px) {
+    section {
+        padding: 75px 3% 50px;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+    }
+}
+
