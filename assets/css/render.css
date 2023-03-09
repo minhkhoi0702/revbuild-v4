@@ -562,9 +562,6 @@ header .navbar {
     .navbar .logo {
         height: 25px;
     }
-    
-    
-    
     /* navigation menu */
     header .navbar {
         padding: 10px 3%;
@@ -643,16 +640,17 @@ header .navbar {
     .sub-menu .sub-item a{
         border-bottom: none;
     }
-    /* home */
-    .home{
+     /* home */
+     .home{
         height:30vh;
         padding-bottom: 10px;
     }
     .home .heading {
-        font-size:3rem 
+        font-size:3rem;
+        text-shadow: 2px 0px 1px rgb(197 197 197 / 70%);
     }
-    /* Intro */
-    .intro .container {
+      /* Intro */
+      .intro .container {
         display: block;
         
     }
@@ -662,8 +660,8 @@ header .navbar {
     .intro .content {
         width: 100%;
     }
-    /* project */
-    .project {
+      /* project */
+      .project {
         padding: 50px 5% 0 5%;
     }
     .project .item {
