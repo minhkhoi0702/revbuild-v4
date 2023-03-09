@@ -97,6 +97,11 @@ span {
 .location{
     margin-top: 70px;
 }
+.location .sub-title{
+    font-size: var(--h2-font);
+    margin-bottom: 30px;
+    
+}
 .location iframe {
     width: 100%;
 }
@@ -228,7 +233,7 @@ form textarea,form button {
 
 @media (max-width: 1700px) {
     section {
-        padding: 100px 12%;
+        padding: 100px 12% 75px;
     }
 }
 
