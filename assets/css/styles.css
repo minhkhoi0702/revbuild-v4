@@ -646,7 +646,7 @@ form textarea,form button {
 
 .footer-top-mid a {
     font-size: var(--p-font);
-    padding: 10px 0;
+    line-height: 1.5;
 }
 
 .footer-top-mid a:not(:last-child) {
@@ -802,7 +802,7 @@ form textarea,form button {
     }
     .footer-top-mid a {
         margin-right: 0;
-        padding: 5px 0;
+    
     }
 }
 
@@ -917,7 +917,12 @@ form textarea,form button {
     .services .item:last-child {
         grid-column: 1/2;
     }
-
+    .footer-top-mid{
+        max-width: 160px;
+    }
+    .footer-top-mid a{
+        margin-bottom: 5px;
+    }
     .footer-top .top {
         display: none;
     }
