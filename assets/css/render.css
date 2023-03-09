@@ -456,7 +456,7 @@ header .navbar {
     }
     
     section {
-        padding: 100px 3% 75px;
+        padding: 50px 3% 75px;
     }
     .project .content {
         padding: 0 3%;
@@ -562,9 +562,7 @@ header .navbar {
     .navbar .logo {
         height: 25px;
     }
-    .home .heading {
-        font-size:var(--big-font) 
-    }
+    
     
     
     /* navigation menu */
@@ -628,8 +626,7 @@ header .navbar {
         transition: 0.3s ease;
         padding: 10px 0;
     }
-
-    
+ 
     .menu-item .sub-menu{
         opacity: 1;
         position: relative;
@@ -646,6 +643,14 @@ header .navbar {
     .sub-menu .sub-item a{
         border-bottom: none;
     }
+    /* home */
+    .home{
+        height:30vh;
+        padding-bottom: 10px;
+    }
+    .home .heading {
+        font-size:3rem 
+    }
     /* Intro */
     .intro .container {
         display: block;
@@ -659,7 +664,7 @@ header .navbar {
     }
     /* project */
     .project {
-        padding: 75px 5% 0 5%;
+        padding: 50px 5% 0 5%;
     }
     .project .item {
         width: 50%;
@@ -667,12 +672,12 @@ header .navbar {
     .contact .content {
         padding: 30px 5%;
     }
-    /* .contact .desc{
-        font-size: 1.4rem;
-       
-    } */
-
     .footer-top .top {
         display: none;
+    }
+}
+@media (max-width: 500px){
+    .project .img-project{
+        height: 550px;
     }
 }
