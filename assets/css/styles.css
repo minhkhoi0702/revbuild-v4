@@ -917,13 +917,17 @@ form textarea,form button {
     .services .item:last-child {
         grid-column: 1/2;
     }
-    .footer-top-mid{
-        max-width: 160px;
-    }
+    
     .footer-top-mid a{
         margin-bottom: 5px;
     }
     .footer-top .top {
         display: none;
+    }
+}
+@media (max-width: 340px){
+    
+    .footer-top-mid{
+        max-width: 160px;
     }
 }

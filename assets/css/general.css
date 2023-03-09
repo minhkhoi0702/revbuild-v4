@@ -490,13 +490,17 @@ header .navbar {
     .sub-menu .sub-item a{
         border-bottom: none;
     }
-    .footer-top-mid{
-        max-width: 160px;
-    }
+    
     .footer-top-mid a:not(:last-child){
         margin-bottom: 5px;
     }
     .footer-top .top {
         display: none;
+    }
+}
+@media (max-width: 340px){
+    
+    .footer-top-mid{
+        max-width: 160px;
     }
 }
