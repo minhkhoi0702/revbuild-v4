@@ -264,7 +264,7 @@ header .navbar {
     width: 100%;
     height: calc(100vh - 40px);
     object-fit: cover;
-    object-position: center;
+    object-position: center bottom;
     background-size: cover;
     background-position: center;
     opacity: 0.92;
@@ -277,6 +277,11 @@ header .navbar {
     top: 45%;
     transition: 0.3s ease;
     color: var(--text-color);
+}
+.swiper-slide .text-content img{
+    height: 160px;
+    width: auto;
+    object-fit: cover;
 }
 
 .swiper-slide .text-content .title {
@@ -351,7 +356,8 @@ header .navbar {
     font-size: var(--p-font);
     line-height: 1.5;
     color: var(--text-color);
-    text-align: center;
+    margin-top: 10px;
+    /* text-align: center; */
 }
 
 .services .row {
@@ -765,6 +771,10 @@ form textarea,form button {
     .menu-item .sub-menu{
         top:50px
     }
+    .swiper-slide .text-content img{
+        height: 130px;
+        
+    }
     .services .row {
         grid-template-columns: 1fr 1fr;
     }
@@ -789,6 +799,10 @@ form textarea,form button {
 @media (max-width: 920px) {
     .swiper-slide .text-content .title {
         font-size: calc(var(--big-font) * 1.5);
+    }
+    .swiper-slide .text-content img{
+        height: 100px;
+        
     }
     .contact {
         grid-template-columns: 1fr;
@@ -817,15 +831,20 @@ form textarea,form button {
         font-size: var(--big-font);
         padding: 0 20px;
     }
+    .swiper-slide .text-content img{
+        height: 65px;
+        
+    }
     .bg-slider-thumbs {
-        bottom: 2.5rem;
+        bottom: 2rem;
     }
     .thumbs-container img {
         margin: 0;
     }
     .thumbs-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-template-columns: repeat(3, 1fr);
         gap: 5px;
     }
     /* navigation menu */
