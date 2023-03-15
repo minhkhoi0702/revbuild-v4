@@ -332,32 +332,61 @@ header .navbar {
 
 /*Our Services*/
 .services {
-    padding: 0px 15%;
+    padding: 100px 15% 0;
     position: relative;
     margin-bottom: 100px;
 }
+.services .info::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(../img/home/info-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 .services .info {
-    padding-top: 50px;
-    /* padding-bottom: 80px; */
+    position: relative;
+    padding: 50px 100px;
     margin-bottom: 80px;
+    
 }
 
 .services .sub-title {
-    text-align: center;
+    position: relative;
     font-family: "Daniel";
     font-weight: bold;
     font-size: calc(var(--h3-font) * 1.5);
-    margin-bottom: 5px;
+    /* font-size: var(--h2-font); */
+    margin-bottom: 20px;
     color: var(--text-color);
 }
-
+.services .desc-wrap{
+    position: relative;
+    background-color: var(--text-color);
+    padding: 30px ;
+}
+.services .desc:first-child{
+    font-weight: 700;
+    font-size: calc(var(--p-font) * 1.1);
+    line-height: 1.5;
+    color: black;
+    margin-top: 0;
+}
+.services .desc:first-child strong{
+    color: var(--main-color)
+}
 .services .desc {
     font-weight: 400;
     font-size: var(--p-font);
     line-height: 1.5;
-    color: var(--text-color);
+    color: black;
     margin-top: 10px;
-    /* text-align: center; */
 }
 
 .services .row {
