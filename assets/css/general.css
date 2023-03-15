@@ -235,6 +235,7 @@ header .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color:  #430001;
 }
 
 .footer-top-left .logo-footer {
