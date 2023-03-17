@@ -220,7 +220,84 @@ header .navbar {
 .sub-menu .sub-item:hover a{
     color: var(--main-color);
 }
-/* hero */
+
+/* FAQ  */
+.accordion {
+    position: relative;
+}
+.accordion .col {
+    /* margin-left: auto;
+    margin-right: auto; */
+    max-width: 100%;
+}
+
+.accordion .sub-title {
+    font-size: var(--h2-font);
+    font-family: "Daniel";
+    margin-bottom: 30px;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 20px 0px;
+}
+
+.accordion .contentBx:last-child {
+    margin-bottom: 0px;
+}
+
+.accordion h3 {
+    font-weight: 500;
+    font-size: var(--p-font);
+    line-height: 1.5;
+    position: relative;
+    padding: 15px 0px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.accordion .contentBx h3::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+.accordion .contentBx.active h3::before {
+    content: "-";
+    color: var(--main-color);
+}
+
+.accordion .contentBx.active h3 {
+    color: var(--main-color);
+    background: var(--text-color);
+    padding-left: 15px;
+    /* margin-left: 10px; */
+}
+
+.accordion p {
+    font-weight: 400;
+    font-size: var(--p-font);
+    line-height: 1.5;
+    position: relative;
+    /* border-left: solid 5px var(--main-color); */
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion .contentBx.active p {
+    height: auto;
+    padding: 15px;
+}
 
 
 
