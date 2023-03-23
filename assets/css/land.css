@@ -158,7 +158,11 @@ span {
     color: var(--main-color);
     
 }
-.intro .content-left .including li::before{
+.intro .content-left .including li:last-child{
+    margin-top: 20px;
+    
+}
+.intro .content-left .including li:not(:last-child)::before{
     content: "";
     display: inline-block;
     width: 3px;
@@ -376,7 +380,7 @@ span {
         padding: 0 12%;
     }
     .home .heading {  
-        /* font-size: calc(var(--big-font) * 1.7);  */
+        font-size: calc(var(--big-font) * 1.7); 
     }
     .intro {
         padding: 0 12%;
