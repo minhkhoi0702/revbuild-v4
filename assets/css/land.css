@@ -40,7 +40,7 @@ body {
 .btn {
     display: inline-block;
     min-width: 100px;
-    padding: 12px ;
+    padding: 10px ;
     background: #c40000;
     border-radius: 10px;
     font-weight: 600;
@@ -107,6 +107,7 @@ span {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    opacity: 0.95;
 
 }
 .home .heading {
@@ -135,12 +136,11 @@ span {
     width: 50%;
 }
 .intro .content-left .desc{
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--p-font);
     line-height: 1.5;
     color: var(--text-color);
     margin-bottom: 5px;
-    text-align: justify;
    
 }
 .intro .content-left .desc strong{
@@ -172,7 +172,7 @@ span {
     background: var(--main-color);
 }
 .intro .content-left-item{
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     align-items: baseline;
 }
@@ -195,19 +195,21 @@ span {
 
 .intro .content-right .desc {
     font-weight: 500;
-    font-size: calc(var(--p-font) *0.95);
+    font-size: calc(var(--p-font) *0.85);
     line-height: 1.5;
     color: var(--text-color);
     text-align: justify;
     margin-bottom: 20px;
 }
 .intro .content-right .reasons{
+    font-size: var(--p-font);
+    font-weight: 500;
     font-style: italic;
     color: #ffffffc2;
 }
 .intro .content-right .including li{
     font-weight: 400;
-    font-size: calc(var(--p-font) *0.95);
+    font-size: calc(var(--p-font) *0.85);
     /* font-style: italic; */
     line-height: 1.5;
     color: var(--text-color);
