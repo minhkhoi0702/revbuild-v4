@@ -98,7 +98,7 @@ span {
     padding: 0 15%;
 }
 .home .content {
-    background-image: url(../img/cabinetry/cabinetry-bg.JPG);
+    background-image: url(../img/cabinetry/cabinetry-bg.jpg);
     width: 100%;
     height: calc(80vh - 40px);
     background-size: cover;
