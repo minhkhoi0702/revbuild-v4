@@ -395,12 +395,7 @@ span {
         padding: 0 12%;
     } */
 }
-@media (max-width: 1600px) {
-    /* .home .heading {  
-        font-size: calc(var(--big-font) * 1.8);
-    } */
-    
-}
+
 @media (max-width: 1400px) {
     section {
         padding: 50px 3% 75px;

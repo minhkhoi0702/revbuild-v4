@@ -107,7 +107,7 @@ span {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    opacity: 0.95;
+    opacity: 0.98;
 
 }
 .home .heading {
@@ -403,9 +403,7 @@ span {
     .home {
         padding: 0 3%;
     }
-    .home .heading {  
-        font-size: calc(var(--big-font) * 1.9);
-    }
+    
     .intro {
         padding: 0 3%;
     }
