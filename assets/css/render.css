@@ -98,7 +98,7 @@ span {
     padding: 0 15%;
 }
 .home .content {
-    background-image: url(../img/estimating/estimating-bg.jpg);
+    background-image: url(../img/render/render-bg.jpg);
     width: 100%;
     height: calc(80vh - 40px);
     background-size: cover;
@@ -248,11 +248,11 @@ span {
 }
 .project .item {
     flex-grow: 1;
-    width: 24%;
+    width: 34%;
 }
 .project .img-project {
     width: 100%;
-    height: 720px;
+    height: 600px;
     object-fit: cover;
 }
 /* Contact Us */
@@ -391,9 +391,7 @@ span {
         padding: 0 12%;
        
     }
-    /* .project .content {
-        padding: 0 12%;
-    } */
+    
 }
 @media (max-width: 1600px) {
     .home .heading {  
@@ -412,7 +410,7 @@ span {
         padding: 0 3%;
     }
     .project .img-project {
-        height: 550px;
+        height: 450px;
     }
     .contact .contact-bg{
         padding: 0 3%;
@@ -437,7 +435,7 @@ span {
         width: 50%;
     }
     .project .img-project {
-        height: 400px;
+        height: 350px;
     }
     .contact .contact-bg{
         height: 150px;
@@ -456,9 +454,9 @@ span {
         font-size: calc(var(--big-font) * 1.6);
         text-shadow: 5px 3px 1px black;
     }
-    .project .item {
+    /* .project .item {
         width: 33%;
-    }
+    } */
     .contact .desc{
         font-size: var(--h3-font);
         margin-bottom: 15px;
@@ -523,6 +521,6 @@ span {
 }
 @media (max-width: 500px){
     .project .img-project{
-        height: 550px;
+        height: 250px;
     }
 }
