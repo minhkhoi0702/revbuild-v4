@@ -172,7 +172,7 @@ span {
     background: var(--main-color);
 }
 .intro .content-left-item{
-    margin-top: 200px;
+    margin-top: 250px;
     display: flex;
     align-items: baseline;
 }
