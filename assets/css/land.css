@@ -129,13 +129,27 @@ span {
     display: flex;
     /* align-items: center; */
 }
+.intro .content-left::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 80px;
+    height: 70px;
+    background-image: url(../img/decoration.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .intro .content-left {
+    position: relative;
     background-image: linear-gradient(to top, #430001, #270000);
     padding: 75px 60px 50px;
     width: 50%;
 }
 .intro .content-left .desc{
+    position: relative;
     font-weight: 500;
     font-size: var(--p-font);
     line-height: 1.5;
@@ -188,7 +202,20 @@ span {
     font-size: var(--h2-font);
     color: var(--text-color);
 }
+.intro .content-right::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: -130px;
+    width: 230px;
+    height: 200px;
+    background-image: url(../img/decoration.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .intro .content-right {
+    position: relative;
     padding: 75px 10px 0 30px;
     width: 50%;
 }
