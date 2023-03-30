@@ -154,7 +154,7 @@ span {
     font-size: var(--p-font);
     line-height: 1.5;
     color: var(--text-color);
-    margin-bottom: 5px;
+    margin-bottom: 20px;
    
 }
 .intro .content-left .desc strong{
