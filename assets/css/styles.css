@@ -113,16 +113,23 @@ header {
 
 .header-top-left a {
     padding: 12px 0px ;
+    
 }
-
+.header-top-left a:not(:last-child){
+    margin-right: 15px;
+}
 .header-top .contact-info:hover {
-    transform: scale(1.1) translateX(5px);
+    transform: scale(1.1) ;
 }
 
 .header-top .contact-info i {
     font-size: calc(var(--p-font) * 1.1);
     color: var(--main-color);
     margin-right: 5px;
+}
+.header-top .contact-info img {
+    margin-right: 5px;
+    
 }
 
 /* Navbar */
