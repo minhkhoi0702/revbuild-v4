@@ -92,38 +92,39 @@ span {
     color: var(--text-color);
 }
 
-
-/* location */
+/* about */
 .about{
     margin-top: 70px;
 }
-.row{
+
+/* why us */
+.why .row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     margin-bottom: 100px;
 }
-.row .info{
+.why .row .info{
     padding-right: 75px;
 }
-.about .sub-title {
+.why .sub-title {
     font-weight: 600;
     font-size: var(--h2-font);
     color: var(--text-color);
     margin-bottom: 20px;
 }
-.about .desc {
+.why .desc {
     font-weight: 400;
     font-size: var(--p-font);
     line-height: 1.5;
     color: var(--second-color);
     margin-bottom: 20px;
-    text-align: justify;
+    
 }
-.about-img{
+.why-img{
     display: flex;
 }
-.about .img-company {
+.why .img-company {
     max-width: 600px;
     width: 100%;
     height: auto;
@@ -131,26 +132,26 @@ span {
     border-radius: 12px;
     margin-left: auto;
 }
-.about .row-qty {
+.why .row-qty {
     display: flex;
     
     
 }
-.about .row-qty .qty-item{
+.why .row-qty .qty-item{
     text-align: center;
     width: 33.33%;
 }
 .row-qty .qty-item:not(:last-child){
     border-right: solid 1px rgba(255, 255, 255, 0.2);
 }
-.about .qty {
+.why .qty {
    
     font-weight: 600;
     font-size: var(--big-font);
     color: var(--text-color);
     margin-bottom: 30px;
 }
-.about .qty-desc {
+.why .qty-desc {
     
     font-weight: 500;
     font-size: calc(var(--p-font) * 1.2);
@@ -185,13 +186,13 @@ span {
         --p-font: 1.3rem;
         transition: 0.1s;
     }
-    .about .qty {
+    .why .qty {
         margin-bottom: 20px;
     }
 }
 
 @media (max-width: 920px) {
-    .about{
+    .why{
         margin-top: 50px;
         padding: 75px 3% ;
     }
@@ -203,18 +204,18 @@ span {
         padding-right: 0;
         margin-bottom: 50px;
     } 
-    .about .img-company {
+    .why .img-company {
         max-width: 500px;
         margin-right: auto;
         margin-left: auto;
     }
 }
 @media (max-width: 700px) {
-    .about .qty {
+    .why .qty {
         font-size: 3rem;
         margin-bottom: 15px;
     }
-    .about .qty-desc {
+    .why .qty-desc {
         
         font-size: calc(var(--p-font) );
         

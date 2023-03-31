@@ -100,7 +100,7 @@ span {
 .home .content {
     background-image: url(../img/graphic/graphic-bg.jpg);
     width: 100%;
-    height: calc(80vh - 40px);
+    height: calc(80vh);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
@@ -540,7 +540,7 @@ span {
     }
       /* project */
     .project {
-        padding: 50px 5% 0 5%;
+        padding: 50px 3% 0 3%;
     }
     .project .content{
         
@@ -551,7 +551,7 @@ span {
         width: 50%;
     }
     .contact .content {
-        padding: 30px 5%;
+        padding: 30px 3%;
     }
     /* FAQ */
     .accordion .sub-title {

@@ -947,6 +947,7 @@ form textarea,form button {
         margin: 0 3px;
         cursor: pointer;
         object-fit: cover;
+        border-radius: 0;
     }
     /* .thumbs-container {
         display: grid;
@@ -1033,6 +1034,7 @@ form textarea,form button {
     .sub-menu .sub-item a{
         border-bottom: none;
     }
+   
 
     .services .row {
         grid-template-columns: 1fr;
