@@ -40,7 +40,7 @@ body {
 .btn {
     display: inline-block;
     min-width: 100px;
-    padding: 15px 20px;
+    padding: 10px;
     background: #c40000;
     border-radius: 10px;
     font-weight: 500;
@@ -60,7 +60,7 @@ a {
 }
 
 section {
-    padding: 100px 15%;
+    padding: 100px 15% 50px;
 }
 
 span {
@@ -81,7 +81,8 @@ span {
 .sub-title {
     font-family: var(--font-daniel);
     font-weight: bold;
-    color: var(--main-color);
+    font-size: var(--h2-font);
+    color: var(--text-color);
 }
 .contact-info {
     display: inline-flex;
@@ -91,12 +92,25 @@ span {
     font-weight: 400;
     color: var(--text-color);
 }
-
+.desc{
+    font-weight: 400;
+    font-size: var(--p-font);
+    line-height: 1.5;
+    color: var(--second-color);
+}
 /* about */
 .about{
     margin-top: 70px;
+    
 }
-
+.about .content{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about .desc {
+    margin-top: 20px;
+}
 /* why us */
 .why .row{
     display: grid;
@@ -105,7 +119,7 @@ span {
     margin-bottom: 100px;
 }
 .why .row .info{
-    padding-right: 75px;
+    padding-left: 20px;
 }
 .why .sub-title {
     font-weight: 600;
@@ -118,19 +132,44 @@ span {
     font-size: var(--p-font);
     line-height: 1.5;
     color: var(--second-color);
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;  
+}
+.why .reasons{
+    font-size: var(--p-font);
+    font-weight: 500;
+    font-style: italic;
+    color: #ffffffc2;
+}
+.why .including{	
+    margin-bottom: 20px;	
+}
+.why .including li{
+    font-weight: 400;
+    font-size: var(--p-font) ;
+    /* font-style: italic; */
+    line-height: 1.5;
+    color: var(--text-color);
+    /* margin-bottom: 5px; */
+}
+.why .including li::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin-right: 4px;
+    border-radius: 50%;
+    background: var(--text-color);
 }
 .why-img{
     display: flex;
 }
 .why .img-company {
-    max-width: 600px;
+    max-width: 550px;
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 12px;
-    margin-left: auto;
+    margin-right: auto;
 }
 .why .row-qty {
     display: flex;

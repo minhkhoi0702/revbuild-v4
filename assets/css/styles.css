@@ -932,7 +932,7 @@ form textarea,form button {
     /* .thumbs-container img {
         margin: 0;
     } */
-    .thumbs-container{
+    /* .thumbs-container{
         padding: 0;
         background:none;
         backdrop-filter: none;
@@ -940,14 +940,22 @@ form textarea,form button {
         border-radius: 0;
         border-bottom: 0;
         border-right: 0;
+    } */
+    .thumbs-container{
+        padding: 4px;
+        width: auto !important;;
+        border-radius: 3px;
     }
-    .thumbs-container img {
-        width: 20px;
-        height: 20px;
-        margin: 0 3px;
+    .thumbs-container img{
+        width: 30px;
+        height: 22px;
+        margin:0 4px 0 0;
         cursor: pointer;
         object-fit: cover;
         border-radius: 0;
+    }
+    .thumbs-container img:last-child {
+        margin-right: 0;
     }
     /* .thumbs-container {
         display: grid;
