@@ -193,14 +193,14 @@ span {
 
 @media (max-width: 920px) {
     .why{
-        margin-top: 50px;
+       
         padding: 75px 3% ;
     }
-    .row {
+    .why .row {
         grid-template-columns: 1fr;
         margin-bottom: 50px;
     }
-    .row .info {
+    .why .row .info {
         padding-right: 0;
         margin-bottom: 50px;
     } 
