@@ -110,7 +110,7 @@ header {
     padding: 12px 0px ;
 }
 .header-top-left a:not(:last-child){
-    margin-right: 15px;
+    margin-right: 30px;
 }
 .header-top .contact-info:hover {
     transform: scale(1.1);
@@ -408,6 +408,9 @@ header .navbar {
 @media (max-width: 700px) {
     .header-top-left a {
         padding: 8px 0px;
+    }
+    .header-top-left a:not(:last-child){
+        margin-right: 15px;
     }
     .navbar .logo {
         height: 25px;

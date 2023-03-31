@@ -190,7 +190,7 @@ span {
     content: "";
     display: block;
     position: absolute;
-    top: 0px;
+    top: 50px;
     right: -130px;
     width: 230px;
     height: 200px;
@@ -503,7 +503,7 @@ span {
 @media (max-width: 920px) {
     .home .heading {  
         font-size: calc(var(--big-font) * 1.7);
-        text-shadow: 5px 3px 1px black;
+        text-shadow: 3px 3px 1px black;
     }
     .project .item {
         width: 33%;
