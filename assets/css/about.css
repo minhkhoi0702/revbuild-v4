@@ -63,7 +63,7 @@ section {
   padding: 100px 15%;
 }
 
-span {
+strong {
   color: var(--main-color);
 }
 
@@ -75,15 +75,18 @@ span {
   width: 10%;
   height: 100%;
 }
+
 .dropdown {
   margin-left: 7px;
 }
+
 .sub-title {
   font-family: var(--font-daniel);
   font-weight: bold;
   font-size: var(--h2-font);
   color: var(--text-color);
 }
+
 .contact-info {
   display: inline-flex;
   align-items: center;
@@ -92,23 +95,27 @@ span {
   font-weight: 400;
   color: var(--text-color);
 }
+
 .desc {
   font-weight: 400;
   font-size: var(--p-font);
   line-height: 1.5;
   color: var(--second-color);
 }
+
 /* about */
 .about {
   margin-top: 110px;
   background-image: linear-gradient(to top, #270000, #420000);
 }
+
 .about .container {
   display: grid;
-  grid-template-columns:repeat(2, 1fr) ;
+  grid-template-columns: repeat(2, 1fr);
   gap: 100px;
   align-items: center;
 }
+
 .about img {
   width: 100%;
   max-height: 400px;
@@ -116,10 +123,11 @@ span {
   object-position: center bottom;
 }
 
-.about .sub-title{
+.about .sub-title {
   margin-bottom: 10px;
 }
-.about .desc:not(:first-of-type){
+
+.about .desc:not(:first-of-type) {
   margin-top: 20px;
 }
 
@@ -127,37 +135,40 @@ span {
 /* why us */
 
 .why {
-  background-image: linear-gradient(to bottom, #4a0002, #2d0000);
-}
-.why .container {
-  display: grid;
-  grid-template-columns:repeat(2, 1fr) ;
-  gap: 100px;
-  align-items: center;
-  
-}
-.why img {
-  width: 100%;
-  max-height: 550px;
-  object-fit: cover;
-  object-position: center bottom;
+  background-image: linear-gradient(to bottom, #460000, #2d0000);
 }
 
-.why .sub-title{
+.why .container {
+  display: flex;
+  align-items: center;
+
+}
+
+.why .sub-title {
   margin-bottom: 10px;
 }
-.why .desc:not(:first-of-type){
+
+.why .desc:not(:first-of-type) {
   margin-top: 20px;
 }
 
+.why .reasons {
+  color: var(--main-color);
+}
 
+.why .content .including {
+  margin-top: 20px;
+}
 
 .why .content .including li {
   font-weight: 400;
   font-size: var(--p-font);
   line-height: 1.5;
-  color: var(--text-color);
+  color: var(--main-color);
+  font-style: italic;
+  margin-top: 5px;
 }
+
 .why .content .including li::before {
   content: "";
   display: inline-block;
@@ -165,31 +176,27 @@ span {
   height: 3px;
   margin-right: 4px;
   border-radius: 50%;
-  background: var(--text-color);
+  background: var(--main-color);
+}
+/* contact */
+.contact{
+  background-image: url(../img/about/contact.png);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+
+}
+.contact .content{
+  display: flex;
+  justify-content: center;
+}
+.contact .sub-title{
+  text-align: center;
+  font-size: calc(var(--h2-font) * 0.8);
 }
 
-/* .why .row-qty {
-  display: flex;
-}
-.why .row-qty .qty-item {
-  text-align: center;
-  width: 33.33%;
-}
-.row-qty .qty-item:not(:last-child) {
-  border-right: solid 1px rgba(255, 255, 255, 0.2);
-}
-.why .qty {
-  font-weight: 600;
-  font-size: var(--big-font);
-  color: var(--text-color);
-  margin-bottom: 30px;
-}
-.why .qty-desc {
-  font-weight: 500;
-  font-size: calc(var(--p-font) * 1.2);
-  line-height: 1.5;
-  color: var(--text-color);
-} */
+
 
 /* Respossive */
 
@@ -198,14 +205,17 @@ span {
     padding: 100px 12%;
   }
 }
+
 @media (max-width: 1600px) {
   .about .container {
     gap: 75px;
   }
+
   .why .container {
     gap: 75px;
   }
 }
+
 @media (max-width: 1400px) {
   section {
     padding: 100px 3%;
@@ -221,36 +231,56 @@ span {
     --p-font: 1.3rem;
     transition: 0.1s;
   }
+
   section {
     padding: 75px 3%;
   }
-  .about{
+
+  .about {
     margin-top: 90px;
   }
+
   .about .desc:not(:first-of-type) {
     margin-top: 15px;
-}
-.why .desc:not(:first-of-type){
-  margin-top: 15px;
-}
+  }
+
+  .why .desc:not(:first-of-type) {
+    margin-top: 15px;
+  }
+
+  .why .content .including {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 920px) {
   section {
     padding: 60px 3%;
-  } 
+  }
+
   .about .container {
     grid-template-columns: 1fr;
     gap: 50px;
   }
+
   .why .container {
     grid-template-columns: 1fr;
     gap: 50px;
   }
-  
+
 }
+
 @media (max-width: 700px) {
+  .contact .sub-title{
+    
+    font-size: calc(var(--h2-font) * 0.7);
+  }
+  .why .content .including li {
+
+    margin-top: 0px;
+  }
+
   section {
     padding: 50px 3%;
-  } 
+  }
 }
