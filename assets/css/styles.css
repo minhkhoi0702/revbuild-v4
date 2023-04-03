@@ -921,8 +921,22 @@ form textarea,form button {
         height: 65px;
         
     }
+    /* background home */
+    .home{
+        height: calc(90vh );
+    }
+    .home .media-icons {
+        height: calc(90vh);
+    }
+    .bg-slider {
+        height: calc(90vh);
+    }
+    
     .bg-slider-thumbs {
         bottom: 5rem;
+    }
+    .swiper-slide .text-content {
+        top: 42%;
     }
     /* .thumbs-container img {
         margin: 0;
@@ -952,6 +966,7 @@ form textarea,form button {
     .thumbs-container img:last-child {
         margin-right: 0;
     }
+    
     /* .thumbs-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
