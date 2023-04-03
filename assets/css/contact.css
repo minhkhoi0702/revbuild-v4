@@ -92,6 +92,13 @@ span {
     color: var(--text-color);
 }
 
+ .desc {
+    font-weight: 400;
+    font-size: var(--p-font);
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
 
 /* location */
 .location{
@@ -109,68 +116,89 @@ span {
 /* Contact Us */
 
 .contact {
+    margin-top: 110px;
     position: relative;
-    background-color: var(--bg-color);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    background-image: url(../img/contact/contact-bg.png);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 5rem;
+    flex-direction: column;
+
 }
 
 .contact .sub-title {
     font-size: var(--h2-font);
     font-family: "Daniel";
+    text-align: center;
 }
-
-.contact .contact-left .desc {
-    margin: 20px 0;
-    font-weight: 400;
-    font-size: var(--p-font-p-font);
-    line-height: 1.5;
-    color: var(--text-color);
+.contact .desc{
+    margin-top: 10px;
+    text-align: center;
 }
-
-.contact-left .box .info {
-    margin: 20px 0;
-    font-weight: 400;
-    font-size: var(--p-font);
-    line-height: 1.5;
-    color: var(--text-color);
+.contact .container{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
-
-.contact .contact-left h3 {
-    font-weight: 500;
-    font-size: var(--h3-font);
-    color: var(--text-color);
-    margin: 20px 0px;
-}
-
-.contact-left .list li {
-    margin-bottom: 15px;
-}
-
-.contact-info {
-    display: inline-flex;
-    align-items: center;
+.contact .info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    font-size: var(--p-font);
-    font-weight: 400;
-    color: var(--text-color);
+
 }
 
-.contact .contact-info:hover {
-    color: var(--text-color);
-    transform: translateX(10px);
-}
-
-.contact-info i {
-    font-size: calc(var(--p-font));
+.contact .info .box{
+    padding: 15px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 5px;
+    
 }
 
+
+.contact .info .box .icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+.contact .info .box:hover {
+    transform: scale(1.1);
+}
+
+.contact .info .box .icon i{
+    color: var(--main-color);
+    font-size: calc(var(--p-font) * 1.3);
+}
+.contact .info .box .text{
+    margin-left: 20px;
+}
+.contact .info .box .text h3{
+    font-weight: 500;
+    font-size: var(--h3-font);
+    color: var(--main-color);
+    line-height: 1.5;
+    /* margin-bottom: 5px; */
+}
+.contact .info .box .text p{
+    font-weight: 400;
+    font-size: var(--p-font);
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.contact-icons{
+    margin-top: 20px;
+}
 .contact-icons i {
     height: 40px;
     width: 40px;
@@ -187,53 +215,19 @@ span {
 .contact-icons i:hover {
     background: var(--text-color);
 }
-
-.contact-right form {
-    position: relative;
+.contact .map{
+    width: 50%;
 }
-
-.contact-right form input,
-form textarea,form button {
-    font-family: "Poppins", sans-serif;
+.contact .map iframe{
     width: 100%;
-    padding: 17px;
-    background: var(--text-color);
-    color: black;
-    border: none;
-    outline: none;
-    font-size: var(--p-font);
-    border-radius: 12px;
-    margin-bottom: 17px;
+    height:400px ;
 }
-
-.contact-right textarea {
-    resize: none;
-    height: 240px;
-}
-
-.contact-right .submit {
-    display: inline-block;
-    font-size: var(--p-font);
-    background: var(--main-color);
-    color: var(--text-color);
-    width: 160px;
-    transition: all 0.45s ease;
-    margin-bottom: 0px;
-}
-
-.contact-right .submit:hover {
-    transform: scale(1.01);
-    cursor: pointer;
-}
-
-
-
 
 /* Respossive */
 
 @media (max-width: 1700px) {
     section {
-        padding: 100px 12% 75px;
+        padding: 75px 12%;
     }
 }
 
@@ -254,14 +248,40 @@ form textarea,form button {
         --p-font: 1.3rem;
         transition: 0.1s;
     }
+    .contact {
+        margin-top: 90px;
+        
+    }
 }
 
 @media (max-width: 920px) {
     section {
+        padding: 75px 3% ;
+    }
+    .contact {
+        margin-top: 90px;
+        
+    }
+    .contact .container{
+        display: block;
+    
+    }
+    .contact .info {
+        width: 100%;
+    }
+    .contact .map{
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    section {
         padding: 75px 3% 50px;
     }
     .contact {
-        grid-template-columns: 1fr;
+        margin-top: 77px;
+        
     }
+    
 }
 
