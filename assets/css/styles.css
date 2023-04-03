@@ -283,7 +283,7 @@ header .navbar {
     object-position: center;
     background-size: cover;
     background-position: center;
-    opacity: 0.92;
+    opacity: 0.97;
 }
 .swiper-slide .text-content {
     display: flex;
@@ -894,17 +894,12 @@ form textarea,form button {
     .contact {
         grid-template-columns: 1fr;
     }
-    .footer-top-mid {
+    /* .footer-top-mid {
         display: flex;
         flex-direction: column;
-    }
-    .footer-top-mid a:not(:last-child) {
-        margin-right: 0px;
-    }
-    .footer-top-mid a {
-        margin-right: 0;
+    } */
     
-    }
+    
 }
 
 @media (max-width: 700px) {
@@ -927,7 +922,7 @@ form textarea,form button {
         
     }
     .bg-slider-thumbs {
-        bottom: 2rem;
+        bottom: 5rem;
     }
     /* .thumbs-container img {
         margin: 0;
@@ -1070,10 +1065,16 @@ form textarea,form button {
     .services .item:last-child {
         grid-column: 1/2;
     }
-    
-    .footer-top-mid a{
+    .footer-top-mid {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-top-mid a:not(:last-child) {
+        margin-right: 0px;
         margin-bottom: 5px;
     }
+    
     .footer-top .top {
         display: none;
     }

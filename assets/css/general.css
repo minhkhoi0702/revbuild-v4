@@ -396,17 +396,7 @@ header .navbar {
     .contact {
         grid-template-columns: 1fr;
     }
-    .footer-top-mid {
-        display: flex;
-        flex-direction: column;
-    }
-    .footer-top-mid a:not(:last-child) {
-        margin-right: 0px;
-    }
-    .footer-top-mid a {
-        margin-right: 0;
-      
-    }
+    
 }
 
 @media (max-width: 700px) {
@@ -504,8 +494,14 @@ header .navbar {
     .sub-menu .sub-item a{
         border-bottom: none;
     }
-    
+    /* footer */
+    .footer-top-mid {	
+        display: flex;	
+        justify-content: center;	
+        flex-direction: column;	
+    }
     .footer-top-mid a:not(:last-child){
+        margin-right: 0px;
         margin-bottom: 5px;
     }
     .footer-top .top {
