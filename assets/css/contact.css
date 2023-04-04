@@ -75,14 +75,17 @@ span {
     width: 10%;
     height: 100%;
 }
+
 .dropdown {
     margin-left: 7px;
 }
+
 .sub-title {
     font-family: var(--font-daniel);
     font-weight: bold;
     color: var(--main-color);
 }
+
 .contact-info {
     display: inline-flex;
     align-items: center;
@@ -92,7 +95,7 @@ span {
     color: var(--text-color);
 }
 
- .desc {
+.desc {
     font-weight: 400;
     font-size: var(--p-font);
     line-height: 1.5;
@@ -101,14 +104,16 @@ span {
 
 
 /* location */
-.location{
+.location {
     margin-top: 70px;
 }
-.location .sub-title{
+
+.location .sub-title {
     font-size: var(--h2-font);
     margin-bottom: 30px;
-    
+
 }
+
 .location iframe {
     width: 100%;
 }
@@ -118,13 +123,15 @@ span {
 .contact {
     margin-top: 110px;
     position: relative;
-    background-image: url(../img/contact/contact-bg.png);
+    background-image: url(../img/contact/contact-bg1.png);
     width: 100%;
-    height: auto;
+    min-height: calc(100vh - 256px);
     background-size: cover;
-    background-position: center;
+    background-position: left center;
+    background-repeat: no-repeat;
+    
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 
@@ -135,17 +142,20 @@ span {
     font-family: "Daniel";
     text-align: center;
 }
-.contact .desc{
+
+.contact .desc {
     margin-top: 10px;
     text-align: center;
 }
-.contact .container{
+
+.contact .container {
     margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.contact .info{
+
+.contact .info {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -153,15 +163,15 @@ span {
 
 }
 
-.contact .info .box{
+.contact .info .box {
     padding: 15px 0;
     display: flex;
     align-items: center;
-    
+
 }
 
 
-.contact .info .box .icon{
+.contact .info .box .icon {
     width: 50px;
     height: 50px;
     background-color: var(--text-color);
@@ -171,34 +181,39 @@ span {
     border-radius: 50%;
 
 }
+
 .contact .info .box:hover {
     transform: scale(1.1);
 }
 
-.contact .info .box .icon i{
+.contact .info .box .icon i {
     color: var(--main-color);
     font-size: calc(var(--p-font) * 1.3);
 }
-.contact .info .box .text{
+
+.contact .info .box .text {
     margin-left: 20px;
 }
-.contact .info .box .text h3{
+
+.contact .info .box .text h3 {
     font-weight: 500;
     font-size: var(--h3-font);
     color: var(--main-color);
     line-height: 1.5;
     /* margin-bottom: 5px; */
 }
-.contact .info .box .text p{
+
+.contact .info .box .text p {
     font-weight: 400;
     font-size: var(--p-font);
     line-height: 1.5;
     color: var(--text-color);
 }
 
-.contact-icons{
+.contact-icons {
     margin-top: 20px;
 }
+
 .contact-icons i {
     height: 40px;
     width: 40px;
@@ -215,28 +230,34 @@ span {
 .contact-icons i:hover {
     background: var(--text-color);
 }
-.contact .map{
+
+.contact .map {
     width: 50%;
 }
-.contact .map iframe{
+
+.contact .map iframe {
     width: 100%;
-    height:400px ;
+    height: 400px;
 }
 
 /* Respossive */
 
 @media (max-width: 1700px) {
+    .contact {
+        min-height: auto;
+    }
+
     section {
         padding: 75px 12%;
     }
 }
 
 @media (max-width: 1400px) {
-    
+
     section {
-        padding: 75px 3% ;
+        padding: 75px 3%;
     }
-   
+
 }
 
 @media (max-width: 1100px) {
@@ -248,40 +269,51 @@ span {
         --p-font: 1.3rem;
         transition: 0.1s;
     }
+
     .contact {
         margin-top: 90px;
-        
+
     }
 }
 
 @media (max-width: 920px) {
     section {
-        padding: 75px 3% ;
+        padding: 75px 3%;
     }
+
     .contact {
         margin-top: 90px;
-        
+        background-image: url(../img/contact/contact-bg-mobile.png);
+        width: 100%;
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: #17140f;
     }
-    .contact .container{
+
+    .contact .container {
         display: block;
-    
+
     }
+
     .contact .info {
         width: 100%;
     }
-    .contact .map{
+
+    .contact .map {
         margin-top: 50px;
         width: 100%;
     }
 }
+
 @media (max-width: 600px) {
     section {
         padding: 75px 3% 50px;
     }
+
     .contact {
         margin-top: 77px;
-        
-    }
-    
-}
 
+    }
+
+}
