@@ -295,7 +295,12 @@ span {
         display: block;
 
     }
-
+    .contact .info .box .icon {
+        width: 40px;
+        height: 40px;
+        
+    
+    }
     .contact .info {
         width: 100%;
     }
