@@ -484,7 +484,12 @@ span {
         padding: 50px 10px 0 30px;
         width: 50%;
     }
-    
+    .intro .content-right .desc {
+        font-size: calc(var(--p-font));
+    }
+    .intro .content-right .including li{
+        font-size: calc(var(--p-font));
+    }
     .project .img-project {
         height: 400px;
     }
