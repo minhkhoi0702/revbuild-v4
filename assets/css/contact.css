@@ -313,12 +313,19 @@ span {
 
 @media (max-width: 600px) {
     section {
-        padding: 75px 3% 50px;
+        padding: 50px 3% ;
     }
 
     .contact {
         margin-top: 77px;
 
+    }
+    .contact .container {
+        margin-top: 30px;  
+    }
+    .contact .info .box {
+        padding: 10px 0;
+        
     }
 
 }
