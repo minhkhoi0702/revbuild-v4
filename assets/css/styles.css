@@ -367,6 +367,7 @@ header .navbar {
     background-image: url(../img/home/info-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: -7px 7px black;
 
 }
 .intro .info {
