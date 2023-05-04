@@ -420,7 +420,7 @@ header .navbar {
     content: "";
     display: block;
     position: absolute;
-    top: 400px;
+    top: 960px;
     left: -620px;
     width: 600px;
     height: 550px;
@@ -428,7 +428,18 @@ header .navbar {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
+.services .container::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -220px;
+    left: -380px;
+    width: 400px;
+    height: 350px;
+    background-image: url(../img/home/decoration3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .services .row {    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -886,7 +897,8 @@ form textarea,form button {
     .accordion .col::before ,
     .contact .contact-left::before,
     .contact .contact-right::before,
-    .services .container::before{
+    .services .container::before,
+    .services .container::after{
         display: none;
     }
     .footer-top {
