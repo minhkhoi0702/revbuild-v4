@@ -370,6 +370,18 @@ header .navbar {
     box-shadow: -7px 7px rgba(41, 2, 2, 0.8);
 
 }
+.intro .info::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -220px;
+    left: -650px;
+    width: 600px;
+    height: 550px;
+    background-image: url(../img/home/decoration2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .intro .info {
     position: relative;
     padding: 40px 70px;
@@ -416,30 +428,8 @@ header .navbar {
 .services .container{
     position: relative;
 }
-.services .container::before{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 960px;
-    left: -620px;
-    width: 600px;
-    height: 550px;
-    background-image: url(../img/home/decoration2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.services .container::after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: -220px;
-    left: -380px;
-    width: 400px;
-    height: 350px;
-    background-image: url(../img/home/decoration3.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+
+
 .services .row {    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -894,11 +884,11 @@ form textarea,form button {
         display: none;
     }
     /* contact */
+    .intro .info::after,
     .accordion .col::before ,
     .contact .contact-left::before,
     .contact .contact-right::before,
-    .services .container::before,
-    .services .container::after{
+    {
         display: none;
     }
     .footer-top {
