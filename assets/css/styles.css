@@ -884,11 +884,10 @@ form textarea,form button {
         display: none;
     }
     /* contact */
-    .intro .info::after,
     .accordion .col::before ,
     .contact .contact-left::before,
     .contact .contact-right::before,
-    {
+    .intro .info::after{
         display: none;
     }
     .footer-top {
