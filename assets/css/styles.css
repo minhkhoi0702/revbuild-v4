@@ -381,6 +381,7 @@ header .navbar {
     background-image: url(../img/home/decoration2.png);
     background-repeat: no-repeat;
     background-size: contain;
+    opacity: 0.7;
 }
 .intro .info {
     position: relative;
